@@ -3,7 +3,7 @@
 
 **Lessons From Improving the Safety of Large Language Models that Follow Instructions**
 
-<img src="images/main.png" alt="drawing" width="300"/>
+<img src="images/main.png" alt="drawing" width="500"/>
 
 ## Starting Point
 
