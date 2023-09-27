@@ -1,5 +1,10 @@
 # Safety-Tuned LLaMAs
 
+
+**Lessons From Improving the Safety of Large Language Models that Follow Instructions**
+
+![main.png](images%2Fmain.png)
+
 ## Starting Point
 
 SafetyDatasets are available under the `data/evaluation` directory.
