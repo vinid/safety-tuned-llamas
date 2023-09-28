@@ -11,6 +11,10 @@ SafetyDatasets are available under the `data/evaluation` directory.
 
 Training data is available under the `data/training` directory. Where you will find the instruction-output pairs.
 
+## Tuning and Generation
+
+Fine-tuning code and generation come from [Alpaca-LoRa](https://github.com/tloen/alpaca-lora) repository.
+
 ## Evaluations
 
 We provide two abstractions in `evals` that can be used to evaluate the responses from various models.
@@ -48,7 +52,10 @@ scores = cm.content_moderation(assistant_texts)
 
 ```
 
-## Generation
+## Script to run Generation
+
+The following script should run with any of our safety datasets. Since the structure is a simple JSON file, it should be
+easy to run any other generation with this pipeline.
 
 ```bash
 python generation/generate_answers.py \
