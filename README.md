@@ -22,6 +22,8 @@ We provide two abstractions in `evals` that can be used to evaluate the response
 For the HarmfulnessRewardModel.
 
 ```python
+from evals import AbsoluteHarmfulnessPredictor, ConversationBuilder
+
 user_texts = [
     "User Request 1",
     "User Request 2",
@@ -46,6 +48,7 @@ print(harmfulness_scores)
 For the OpenAI Evaluator:
 
 ```python
+from evals import ContentModeration
 
 cm = ContentModeration()
 scores = cm.content_moderation(assistant_texts)
