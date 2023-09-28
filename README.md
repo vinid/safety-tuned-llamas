@@ -45,7 +45,7 @@ harmfulness_scores = harmfulness_predictor.predict(inputs)
 print(harmfulness_scores)
 ```
 
-For the OpenAI Evaluator:
+For the OpenAI Evaluator, you will have to set the environment variable `OPEN_AI_KEY` and then run:
 
 ```python
 from evals import ContentModeration
