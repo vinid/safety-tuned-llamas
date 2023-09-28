@@ -1,0 +1,8 @@
+torch==2.0.0
+torchaudio==2.0.0
+torchvision==0.15.0
+transformers==4.30.1
+datasets
+pandas==1.5.3
+peft==0.3.0
+bitsandbytes==0.38.1
