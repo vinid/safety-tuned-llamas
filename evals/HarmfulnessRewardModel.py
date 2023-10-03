@@ -9,8 +9,8 @@ from transformers import (
     DataCollatorWithPadding,
 )
 
-REDTEAM_MODEL = "safepaca/absolute-harmfulness-predictor-redteam"
-READTEAM_OSST_MODEL = "safepaca/absolute-harmfulness-predictor-redteam-osst"
+REDTEAM_MODEL = "hidden/hidden"
+READTEAM_OSST_MODEL = "hidden/hidden"
 
 
 class ConversationBuilder:
