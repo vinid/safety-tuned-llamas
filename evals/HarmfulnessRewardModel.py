@@ -70,6 +70,8 @@ class AbsoluteHarmfulnessPredictor:
             list: List of absolute harmfulness predictions.
         """
 
+        assert len(user_texts) == len(assistant_texts)
+
         # Build the conversation with the correct template.
         conversation = ConversationBuilder()
         texts = [conversation.build(u, a) for u, a in zip(user_texts, assistant_texts)]
