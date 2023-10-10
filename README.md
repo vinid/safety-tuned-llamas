@@ -33,14 +33,9 @@ assistant_texts = [
     "Assistant Response 2",
 ]
 
-# Build the conversation with the correct template.
-conversation = ConversationBuilder()
-inputs = [conversation.build(u, a) for u, a in zip(user_texts, assistant_texts)]
-print(inputs)
-
 setup = "redteam"  # or "redteam-osst"
 harmfulness_predictor = AbsoluteHarmfulnessPredictor(setup, device="cuda:0")
-harmfulness_scores = harmfulness_predictor.predict(inputs)
+harmfulness_scores = harmfulness_predictor.predict(user_texts, assistant_texts)
 
 print(harmfulness_scores)
 ```

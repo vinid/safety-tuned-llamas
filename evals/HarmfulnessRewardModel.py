@@ -57,17 +57,23 @@ class AbsoluteHarmfulnessPredictor:
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
 
     @torch.no_grad()
-    def predict(self, texts, batch_size=128, max_length=512, show_progress=True):
+    def predict(self, user_texts: Union[str, List[str]], assistant_texts: Union[str, List[str]], batch_size=128, max_length=512, show_progress=True):
         """Predict the absolute harmfulness of a list of texts.
 
         Args:
-            texts (list): List of texts to predict the absolute harmfulness of.
+            user_texts (Union[str, List[str]]): List of user texts.
+            assistant_texts (Union[str, List[str]]): List of assistant texts.
             batch_size (int): Batch size to use for prediction. Defaults to 128.
             max_length (int): Maximum length of the input texts. Defaults to 512.
             show_progress (bool): Whether to show a progress bar.
         Returns:
             list: List of absolute harmfulness predictions.
         """
+
+        # Build the conversation with the correct template.
+        conversation = ConversationBuilder()
+        texts = [conversation.build(u, a) for u, a in zip(user_texts, assistant_texts)]
+
         raw_dataset = Dataset.from_dict({"text": texts})
 
         proc_dataset = raw_dataset.map(
