@@ -1,9 +1,9 @@
-# Safety-Tuned LLaMAs
-
+# Safety-Tuned LLaMAs: ICLR 2024
 
 **Lessons From Improving the Safety of Large Language Models that Follow Instructions**
-
+<p align="center">
 <img src="images/main.png" alt="drawing" width="500"/>
+</p>
 
 ## Starting Point
 
