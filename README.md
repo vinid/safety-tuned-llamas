@@ -63,3 +63,11 @@ python generation/generate_answers.py \
     --lora_weights ${model} \
     --load_8bit
 ```
+
+# Licensing
+
+* Code is licensed under the MIT License. 
+
+* Due to the fact that some of the data is GPT-generated and comes from other work, Data is licensed under the Creative Commons Attribution Non Commercial 4.0 License. For SafeText data, also referred as PhysicalSafety in our paper, please refer to [1].
+
+[1] Levy, S., Allaway, E., Subbiah, M., Chilton, L., Patton, D., McKeown, K., & Wang, W. Y. (2022). Safetext: A benchmark for exploring physical safety in language models. EMNLP.
