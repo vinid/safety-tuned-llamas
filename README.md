@@ -5,6 +5,22 @@
 <img src="images/main.png" alt="drawing" width="500"/>
 </p>
 
+## Citation
+
+Please consider citing the following paper if you use this code or data in your work:
+
+
+```
+@inproceedings{
+bianchi2024safetytuned,
+title={Safety-Tuned {LL}a{MA}s: Lessons From Improving the Safety of Large Language Models that Follow Instructions},
+author={Federico Bianchi and Mirac Suzgun and Giuseppe Attanasio and Paul Rottger and Dan Jurafsky and Tatsunori Hashimoto and James Zou},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=gT5hALch9z}
+}
+```
+
 ## Starting Point
 
 SafetyDatasets are available under the `data/evaluation` directory.
